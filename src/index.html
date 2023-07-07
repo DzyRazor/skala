@@ -1,18 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="style.css">
         <title>Skala</title>
     </head>
 
     <body>
-        <h1>Bem-Vindo</h1>
-        <h2>A Skala está aguardando você!</h2>
-        <h3>A Skala está aguardando você!</h3>
-        <h4>A Skala está aguardando você!</h4>
-        <h5>A Skala está aguardando você!</h5>
-        <h6>A Skala está aguardando você!</h6>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repellendus, hic repudiandae adipisci laboriosam eveniet expedita doloremque earum, et dolorum autem explicabo voluptatem impedit, necessitatibus temporibus mollitia non fugiat? Quas!
-        </p>
+        <nav class="navbar">
+            <h1 class="logo-skala">
+                <span class="copy--secondary">Skala</span>
+                <span class="logo-skala__subtitle"> Turismo</span></br>
+            </h1>
+            <ul class="navbar__links">
+                <li>
+                    <a href="#viagens">
+                        Viagens
+                    </a>
+                </li>
+                <li>
+                    <a href="#destinos">
+                        Destinos
+                    </a>
+                </li>
+                <li>
+                    <a href="#promoçoes">
+                        Promoçoes
+                    </a>
+                </li>
+                <li>
+                    <a href="#contatos">
+                        Contatos
+                    </a>
+                </li>
+                <li>
+                    <a href="#sobrenois">
+                        Sobre Nós
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <div id="slider">
+                <div class="slide">
+                    <img class="slide__background-image" src="./images/aviao-novo.jpg" alt="Skala Banner"/>
+                    <div class="slide__copy">
+                        <h6><span class="copy--primary">Proxímos eventos</span> - Dia 12 e 25 de outubro</h6>
+                        <h2><span class="copy--primary">Creative</span> Minds</h2>
+                        <button class="btn"> Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <ul>
+                    <li><h3>+ de 500</h3>viagens realizados</li>
+                    <li><h3>+ de 200.000</h3>passagens vendidas</li>
+                    <li><h3>+ de 300</h3>empresas atendidas</li>
+                </ul>
+            </section>
+
+            <section>
+                <div>
+                    <img class="slide__background-image" src="./images/imagem12.jpg" />
+                    <h6>fazemos suas férias acontecerem</h6>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quis voluptas ipsa excepturi cum? Cupiditate quidem commodi totam non adipisci aliquam consectetur magni ipsum, recusandae sunt dolor unde eos ullam.
+                    </p>
+                    <button>saiba mais</button>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <img class="slide__background-image" src="./images/imagem13.jpg" alt="">
+                    <h6>
+                        Você informa a data e nós planejamos uma viagem de qualidade e
+                    </h6>
+                    <h2><span>Muito+ </span>Diversão</h2>
+                    <button>Fazer cotação</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h2>Skala<span>On</span> <span>Fire</span></h2>
+            <form>
+                <label>receba news e promoções</label>
+                <input type="email" placeholder="email" />
+                <button type="submit">Enviar</button>
+            </form>
+            <ul>
+                <li><a href="http://facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="http://twitter.com/" target="_blank">Twitter</a></li>
+                <li><a href="http://youtube.com/" target="_blank">YouTube</a></li>
+            </ul>
+            <hr />
+            <p>
+                <small>Skala<span>ON</span> <span>Fire</span> - Todos os direitos reservados</small>
+            </p>
+        </footer>
     </body>
 </html>
