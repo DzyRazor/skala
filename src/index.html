@@ -3,13 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="style.css">
         <title>Skala</title>
     </head>
 
     <body>
-        <nav>
-            <h1>Skala<span>On</span> <span>Fire</span></h1>
-            <ul>
+        <nav class="navbar">
+            <h1 class="logo-skala">
+                <span class="copy--secondary">Skala</span>
+                <span class="logo-skala__subtitle"> Turismo</span></br>
+            </h1>
+            <ul class="navbar__links">
                 <li>
                     <a href="#viagens">
                         Viagens
@@ -40,11 +44,13 @@
 
         <header>
             <div id="slider">
-                <img src="./images/imagem1.avif" alt="">
                 <div class="slide">
-                    <h6><span>Confira Nossos Proxímos eventos</span> - Dia 12 e 25 de outubro</h6>
-                    <h2><span>Creative</span> Minds</h2>
-                    <button>Saiba Mais</button>
+                    <img class="slide__background-image" src="./images/aviao-novo.jpg" alt="Skala Banner"/>
+                    <div class="slide__copy">
+                        <h6><span class="copy--primary">Proxímos eventos</span> - Dia 12 e 25 de outubro</h6>
+                        <h2><span class="copy--primary">Creative</span> Minds</h2>
+                        <button class="btn"> Saiba Mais</button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -60,7 +66,7 @@
 
             <section>
                 <div>
-                    <img src="./images/imagem2.avif" />
+                    <img class="slide__background-image" src="./images/imagem12.jpg" />
                     <h6>fazemos suas férias acontecerem</h6>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
                     <p>
@@ -72,7 +78,7 @@
 
             <section>
                 <div>
-                    <img src="./images/imagem13.jpg" alt="">
+                    <img class="slide__background-image" src="./images/imagem13.jpg" alt="">
                     <h6>
                         Você informa a data e nós planejamos uma viagem de qualidade e
                     </h6>

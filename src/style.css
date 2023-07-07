@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Montserrat:wght@400;700&family=Tilt+Prism&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --color-primary: rgb(251, 255, 0);
+    --default-padding: 1rem;
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
+.copy--secondary {
+    color: var(--color-primary);
+    font-size: 80px;
+}
+
+
+body {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.navbar {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 22fr;
+    align-items: center;
+    top: 0;
+    left: 2rem;
+    
+    width: 100vw;
+    height: 9.75rem;
+    padding: 0 1rem;
+    
+}
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links li {
+    font-size: .910rem;
+    margin-right: 2.750rem;
+    text-transform: uppercase;
+}
+
+.navbar__links a {
+    font-weight: 600;
+    font: bold;
+    font-style: oblique;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+.logo-skala {
+    font-family:Belanosima;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.logo-skala__subtitle {
+    line-height: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    padding: 6.69rem;
+}
+
+#slider {
+    background-color: black;
+    color: white;
+}
+
+.slide {
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.slide__copy {
+    position: absolute;
+    top: 6rem;
+    left: 58vw;
+}
+
+.slide__copy h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+    margin-bottom: 4.8rem;
+    margin-top: 3rem;
+  
+}
+
+.slide__copy h2 {
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6rem;
+    
+}
+
+.slide__copy h2 span {
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    padding: .5rem 1.3rem;
+    border: .125rem solid #fff;
+    border-radius: 5rem;
+    color: var(--color-primary);
+    background: unset;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 12rem;
+    transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
