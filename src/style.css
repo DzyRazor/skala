@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Montserrat:wght@400;700&family=Tilt+Prism&display=swap');
 
-
 * {
     box-sizing: border-box;
 }
@@ -9,22 +8,20 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    --color-primary: rgb(251, 255, 0);
+    color: #333;
+    --color-primary:#ffc500;
     --default-padding: 1rem;
 }
 
-.copy--primary {
-    color: var(--color-primary);
-}
-
-.copy--secondary {
-    color: var(--color-primary);
-    font-size: 80px;
-}
-
-
 body {
     margin: 0;
+    padding-top: 7.75rem;
+}
+
+header,
+main,
+footer {
+    overflow-x: visible;
 }
 
 ul {
@@ -35,18 +32,20 @@ ul {
 
 
 .navbar {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     display: grid;
-    grid-template-columns: 1fr 22fr;
+    grid-template-columns: 1fr 9fr;
     align-items: center;
     top: 0;
-    left: 2rem;
+    left: 0;
     
     width: 100vw;
-    height: 9.75rem;
+    height: 7.75rem;
     padding: 0 1rem;
     
+    background-color: #000;
+    color: #fff;
 }
 
 .navbar__links {
@@ -54,16 +53,14 @@ ul {
 }
 
 .navbar__links li {
-    font-size: .910rem;
-    margin-right: 2.750rem;
+    font-size: 0.875rem;
+    margin-right: 3rem;
     text-transform: uppercase;
 }
 
 .navbar__links a {
-    font-weight: 600;
-    font: bold;
-    font-style: oblique;
-    color: white;
+    font-weight: 300;
+    color:white;
     text-decoration: none;
 }
 
@@ -71,23 +68,26 @@ ul {
     color: var(--color-primary);
 }
 
-.logo-skala {
-    font-family:Belanosima;
-    font-weight: 500;
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 1ch;
     text-transform: uppercase;
+    text-align: right;
 }
 
-.logo-skala__subtitle {
-    line-height: 1rem;
-    font-size: 2rem;
-    font-weight: 400;
-    color: white;
-    padding: 6.69rem;
+.logo-studion__subtitle {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.copy--primary{
+    color: var(--color-primary);
 }
 
 #slider {
     background-color: black;
-    color: white;
+   color: #fff;
 }
 
 .slide {
@@ -100,31 +100,25 @@ ul {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    
 }
 
 .slide__copy {
     position: absolute;
-    top: 6rem;
-    left: 58vw;
+    top: 1.25rem;
+    left: 50vw;
 }
 
 .slide__copy h6 {
-    font-size: 1rem;
+    font-size: .9375rem;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .1875rem;
-    margin-bottom: 4.8rem;
-    margin-top: 3rem;
-  
 }
 
 .slide__copy h2 {
-    margin-top: 3rem;
-    margin-bottom: .5rem;
     font-size: 6.25rem;
     text-transform: uppercase;
-    line-height: 6rem;
-    
+    line-height: 6.25rem;
 }
 
 .slide__copy h2 span {
@@ -133,13 +127,13 @@ ul {
 
 .btn {
     cursor: pointer;
-    padding: .5rem 1.3rem;
-    border: .125rem solid #fff;
+    padding: 1rem 2.5rem;
+    border: 0.125rem solid #fff;
     border-radius: 5rem;
     color: var(--color-primary);
     background: unset;
-    font-size: 15px;
-    font-weight: 800;
+    font-size: .9375rem;
+    font-weight: 700;
     text-transform: uppercase;
     margin-left: 12rem;
     transition: 0.5s all ease;
@@ -152,3 +146,60 @@ ul {
     background-color: var(--color-primary);
     color: #fff;
 }
+
+#counter {
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.counter__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 0;
+    padding: 3.675rem 1rem;
+}
+
+.counter__container h3 {
+    font-size: 2.1875rem;
+}
+
+.counter__container h3 small {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.institutional {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem;
+    align-items: center;
+    padding: 4.375rem;
+}
+
+.institutional__copy {
+    padding: 0 1.875rem;
+}
+
+.institutional__copy h6 {
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+.institutional__copy h4 {
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+
+}
+
+.institutional p {
+    font-size: 1.5625;
+    line-height: 1.6875rem;
+}
+
+
