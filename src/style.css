@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Montserrat:wght@400;700&family=Tilt+Prism&display=swap');
 
-
 * {
     box-sizing: border-box;
 }
@@ -9,23 +8,20 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    color: #333;
     --color-primary:#ffc500;
     --default-padding: 1rem;
-
-}
-
-.copy--primary {
-    color: var(--color-primary);
-}
-
-.copy--secondary {
-    color: var(--color-primary);
-    font-size: 80px;
 }
 
 body {
     margin: 0;
     padding-top: 7.75rem;
+}
+
+header,
+main,
+footer {
+    overflow-x: visible;
 }
 
 ul {
@@ -57,7 +53,7 @@ ul {
 }
 
 .navbar__links li {
-    font-size: .0.875rem;
+    font-size: 0.875rem;
     margin-right: 3rem;
     text-transform: uppercase;
 }
@@ -108,7 +104,7 @@ ul {
 
 .slide__copy {
     position: absolute;
-    top: 6.25rem;
+    top: 1.25rem;
     left: 50vw;
 }
 
@@ -120,13 +116,9 @@ ul {
 }
 
 .slide__copy h2 {
-    margin-top: 3rem;
-    margin-bottom: .5rem;
     font-size: 6.25rem;
     text-transform: uppercase;
-    line-height: 6rem;
-    color: #fff;
-    
+    line-height: 6.25rem;
 }
 
 .slide__copy h2 span {
@@ -156,9 +148,6 @@ ul {
 }
 
 #counter {
-    position: absolute;
-    width: 100%;
-    top: 110%;
     background-color: var(--color-primary);
     color: #fff;
     text-transform: uppercase;
@@ -166,11 +155,10 @@ ul {
 
 .counter__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     margin: 0;
-    padding: 3.375rem 1rem;
-    padding-left: 8.335rem;
+    padding: 3.675rem 1rem;
 }
 
 .counter__container h3 {
@@ -194,8 +182,24 @@ ul {
     padding: 0 1.875rem;
 }
 
-.institutional__image {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+.institutional__copy h6 {
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+
 }
+
+.institutional__copy h4 {
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+
+}
+
+.institutional p {
+    font-size: 1.5625;
+    line-height: 1.6875rem;
+}
+
+
