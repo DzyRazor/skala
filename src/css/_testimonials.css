@@ -9,16 +9,13 @@
     margin: 0;
 }
 
-.testimonials {
+.info {
+    display: block;
     height: 48rem;
     background-color: var(--color-primary);
 }
 
-.testimonials_info {
-    display: block;
-}
-
-.testimonials__info__depoimento1 {
+.info__depoimento {
     display: grid;
     position: relative;
     justify-items: center;
@@ -26,12 +23,12 @@
     top: 4.875rem;
 }
 
-.testimonials__info__depoimento1 h2 {
+.info__depoimento h2 {
     font-size: 3.125rem;
     margin-bottom: 0;
 }
 
-.testimonials__info__depoimento1 h6 {
+.info__depoimento h6 {
     margin: 0 0;
     margin-left: 18rem;
     font-size: 14px;
@@ -40,12 +37,12 @@
     font-family: 'montserrat';
 }
 
-.testimonials__info__depoimento1 h3 {
+.info__depoimento h3 {
     font-size: 83px;
     margin: 0;
 }
 
-.testimonials__info__depoimento1 p {
+.info__depoimento p {
     width: 36rem;
     text-align: center;
     margin: 0;

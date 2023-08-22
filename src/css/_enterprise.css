@@ -1,0 +1,79 @@
+.hero__copy h2 {
+        font-size: 120px;
+        letter-spacing: -5px;
+        line-height: 120px;
+        font-weight: 700;
+        font-family: "Montserrat";
+}
+
+.enterprise {
+
+}
+
+.enterprise__container {
+   display: grid;
+   grid-template-columns: 39vw 7fr;
+}
+
+.info__copy {
+margin-left: 10rem;
+
+}
+
+.info__copy h3 {
+    width: 450px;
+    height: 136px;
+    font-size: 25px;
+    line-height: 31px;  
+    font-weight: 700;
+    font-family: "Montserrat";
+    border-bottom: 2.875rem;
+    margin: 0;
+}
+
+.info__copy p {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+#p1 {
+    margin: 0;
+}
+
+#p2 {
+    margin: 2.875rem 0;
+}
+
+.enterprise__background {
+    position: relative;
+    right: 12rem;
+}
+
+.enterprise__container__logos {
+    display: grid;
+    justify-items: center;
+    background-color: var(--color-primary);
+    height: 37.25rem;
+}
+
+.enterprise__container__logos h3 {
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+
+.enterprise__container__logos img {
+    padding-bottom: 5rem;
+}
+
+.background__youtube {
+    display: grid;
+    height: 840px;
+    align-items: center;
+    justify-items: center;
+}
